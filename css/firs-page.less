@@ -1,0 +1,448 @@
+
+/********************************************
+***************  Верстка  *******************
+*********************************************/
+
+header{
+  position: relative;
+  padding: 62px 97px 19px 97px;
+  background-image: url("../img/slider-img@1X.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
+  .menu ul{
+    display: flex;
+    justify-content: end;
+    float: right;
+    list-style-type: none;
+  }
+  .menu a{
+    margin-right: 20px;
+    text-decoration: none;
+    color: #212121;
+    font-size: 14px;
+    font-weight: 500;
+    transition: 0.4s;
+  }
+  .menu a:hover{
+    color: red;
+    transition: 0.4s;
+    text-decoration: underline;
+  }
+  .header-text{
+    max-width: 500px;
+    padding-top: 288px;
+    b{
+      color: #43A047;
+    }
+    h1{
+      font-size: 62px;
+      font-weight: 200;
+      color: #212121;
+      margin-top: 22px;
+      margin-bottom: 34px;
+    }
+    .button{
+      margin-top: 34px;
+    }
+  }
+}
+
+.featured-product{
+  a{
+    color: #212121;
+    text-decoration: none;
+  }
+  span{
+    color: #6C6C6C;
+    font-size: 36px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-weight: 600;
+  }
+  span.active{
+    color: #212121;
+    font-size: 36px;
+  }
+  .products{
+    margin-top: 72px;
+  }
+  .products>div div{
+    background-image: url("../img/product-2@1X.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 270px;
+    width: 270px;
+  }
+}
+.promo-product-text{
+  height: 683px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 30px;
+  b{
+    color: #1E88E5;
+  }
+  p{
+    display: block;
+    max-width: 375px;
+  }
+}
+.promo-product {
+  .img{
+    background-size: cover;
+  }
+  .img:nth-child(1) {
+    background-image: url("../img/promo-img@1X.png");
+  }
+  .img:nth-child(2) {
+    background-image: url("../img/promo-img1@1X.png");
+  }
+}
+
+
+.trending{
+  span{
+    color: #212121;
+    font-size: 36px;
+    font-weight: 600;
+  }
+  .img{
+    margin-top: 60px;
+  }
+  img{
+    margin-bottom: 30px;
+    width: 370px;
+    height: 370px;
+  }
+}
+
+.hot-deals{
+  background-image: url("../img/slider@1X.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
+  position: relative;
+  margin-top: 120px;
+  div{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 520px;
+    margin-left: 50px;
+    b{
+      color: #E53935;
+    }
+    h2{
+      font-weight: 200;
+      font-size: 62px;
+      color: #212121;
+      margin: 22px 0;
+    }
+  }
+}
+
+.exclusive{
+  .exclusive-main{
+    background-image: url("../img/product-1-lg@1X.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 550px;
+    width: 570px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 32px;
+  }
+  b{
+    color: #1E88E5;
+  }
+  p{
+    display: block;
+    max-width: 370px;
+  }
+  .exclusive-img>div>div{
+    margin-bottom: 10px;
+  }
+}
+
+
+.app{
+  margin-top: 120px;
+  background-image: url("../img/back-img@1X.png");
+  height: 516px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .app-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 98px;
+    max-width: 500px;
+    .buttons{
+      display: flex;
+      justify-content: start;
+    }
+    div{
+      margin-right: 10px;
+    }
+  }
+  h3{
+    padding: 0;
+    margin: 0;
+    font-size: 62px;
+    font-weight: 300;
+    color: #212121;
+  }
+  p{
+    font-size: 22px;
+  }
+}
+
+
+@media (max-width: 575.98px) {
+  section{
+    padding-top: 50px;
+  }
+  header{
+    padding: 30px 30px 19px 30px;
+    height: 600px;
+    .header-text{
+      padding-top: 100px;
+    }
+    .logo{
+      padding: 0;
+      img{
+        width: 100%;
+      }
+    }
+    .menu{
+      display: none;
+    }
+    p{
+      display: block;
+      max-width: 400px;
+    }
+  }
+  .featured-product .products > div div{
+    max-width: 400px;
+    max-height: 400px;
+    margin: 10px auto;
+  }
+  .promo-product-text{
+    height: 400px;
+    p{
+      display: block;
+      max-width: 350px;
+    }
+  }
+  .trending img{
+    margin: 10px auto;
+    max-width: 300px;
+    height: auto;
+    display: block;
+  }
+  .hot-deals{
+    height: 400px;
+  }
+  .exclusive .main{
+    padding: 0;
+  }
+  .exclusive .exclusive-main{
+    margin: 10px auto;
+    height: 450px;
+    width: auto;
+  }
+  .exclusive p{
+    width: 240px;
+  }
+  .exclusive .exclusive-img > div > div{
+    margin-bottom: 5px;
+  }
+  .exclusive .exclusive-img img{
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+  }
+  .app{
+    height: 400px;
+  }
+  .app .app-text{
+    margin-left: 30px;
+    h3{
+      font-size: 52px;
+    }
+  }
+  footer{
+    display: none;
+  }
+}
+
+// Малые девайсы («ландшафтные», >= 575px)
+@media (min-width: 576px) and (max-width: 767.98px) {
+  section{
+    padding-top: 50px;
+  }
+  header{
+    padding: 30px 30px 19px 30px;
+    height: 600px;
+    .header-text{
+      padding-top: 100px;
+    }
+    .logo{
+      padding: 0;
+      img{
+        width: 100%;
+      }
+    }
+    .menu{
+      display: none;
+    }
+    p{
+      display: block;
+      max-width: 400px;
+    }
+  }
+  .featured-product .products > div div{
+    width: 400px;
+    height: 400px;
+    margin: 10px auto;
+  }
+  .promo-product-text{
+    height: 400px;
+    p{
+      display: block;
+      max-width: 350px;
+    }
+  }
+  .trending img{
+    margin: 10px auto;
+    max-width: 400px;
+    height: 400px;
+    display: block;
+  }
+  .hot-deals{
+    height: 400px;
+  }
+  .exclusive .main{
+    padding: 0;
+  }
+  .exclusive .exclusive-main{
+    margin: 10px auto;
+    height: 450px;
+    min-width: 100%;
+  }
+  .exclusive p{
+    width: 240px;
+  }
+  .exclusive .exclusive-img > div > div{
+    margin-bottom: 5px;
+  }
+  .exclusive .exclusive-img img{
+    width: 400px;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+  }
+  footer{
+    display: none;
+  }
+}
+
+// Средние девайсы («таблетки», >= 768px)
+@media (min-width: 768px) and (max-width: 991.98px) {
+  section{
+    padding-top: 80px;
+  }
+  header{
+    padding: 30px 30px 19px 30px;
+    height: 600px;
+    .header-text{
+      padding-top: 100px;
+    }
+    .logo{
+      margin-top: 1em;
+      img{
+        width: 80%;
+      }
+    }
+    ul li a{
+      margin-right: 5px;
+    }
+  }
+  .featured-product .products > div div{
+    width: 170px;
+    height: 170px;
+  }
+  .promo-product-text{
+    height: 400px;
+    p{
+      display: block;
+      max-width: 250px;
+    }
+  }
+  .trending img{
+    width: 240px;
+    height: 240px;
+    margin-bottom: 10px;
+  }
+  .hot-deals{
+    height: 600px;
+  }
+  .exclusive .exclusive-main{
+    height: 350px;
+    width: 380px;
+  }
+  .exclusive p{
+    width: 240px;
+  }
+  .exclusive .exclusive-img > div > div{
+    margin-bottom: 5px;
+  }
+  .exclusive .exclusive-img img{
+    width: 170px;
+    height: auto;
+  }
+}
+
+// Большие девайсы (большие десктопы, >= 992px)
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .container{
+    max-width: 970px;
+  }
+  .featured-product .products > div div{
+    width: 230px;
+    height: 230px;
+  }
+  .promo-product-text{
+    height: 600px;
+  }
+  .trending img{
+    width: 310px;
+    height: 310px;
+    margin-bottom: 10px;
+  }
+  .exclusive .exclusive-main{
+    height: 450px;
+    width: 480px;
+  }
+  .exclusive p{
+    width: 300px;
+  }
+  .exclusive .exclusive-img > div > div{
+    margin-bottom: 5px;
+  }
+  .exclusive .exclusive-img img{
+    width: 220px;
+    height: auto;
+  }
+  footer{
+    display: none;
+  }
+}
+
+// Большие девайсы (большие десктопы, >= 1200px)
+// Выглядит збс
+@media (min-width: 1200px) {}

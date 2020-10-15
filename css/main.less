@@ -1,0 +1,135 @@
+//compression: true
+
+/********************************************
+***********  Основные настройки  ************
+*********************************************/
+*{
+  outline: none !important
+}
+body{
+  font-family: 'Montserrat', sans-serif;
+  background-color: white;
+}
+body,
+.row,
+.container,
+.container-fluid{
+  margin: 0 auto;
+  padding: 0;
+}
+.container{
+  max-width: 1200px;
+}
+p{
+  color: #6C6C6C;
+  font-size: 14px;
+  line-height: 23px;
+}
+b{
+  font-size: 18px;
+}
+a{
+  text-decoration: none;
+}
+strong{
+  display: block;
+  font-size: 36px;
+  color: #212121;
+}
+.button{
+  width: 213px;
+  height: 46px;
+  color: #212121;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  box-shadow: 3px 3px 3px gray;
+  border-radius: 25px;
+  display: block;
+}
+.button:hover{
+  background-color: rgba(156,156,156,0.31);
+}
+.button:active{
+  box-shadow: none;
+}
+section{
+  padding-top: 120px;
+}
+.explore a{
+  float: right;
+  font-weight: 600;
+  color: #212121;
+  font-size: 18px;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.circle{
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 19px;
+  left: 40%;
+  right: 40%;
+  div{
+    background-color: #212121;
+    margin: 5px;
+    height: 35px;
+    width: 35px;
+    opacity: 0.2;
+    border-radius: 50%;
+  }
+  div.active{
+    opacity: 1;
+    height: 41px;
+    width: 41px;
+    margin: 0;
+  }
+}
+a>img:hover{
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
+footer{
+  background-color: #F7F7F7;
+  padding-top: 120px;
+  strong{
+    font-size: 18px;
+    color: #6C6C6C;
+    margin-bottom: 25px;
+  }
+  p{
+    font-weight: 600;
+  }
+  a{
+    display: block;
+    text-decoration: none;
+    font-weight: 600;
+    color: #212121;
+    margin-left: -15px;
+    margin-bottom: 10px;
+  }
+  a:hover{
+    color: red;
+  }
+  input[type="email"]{
+    width: 100%;
+    height: 49px;
+  }
+  input[type="email"]:focus{
+    border-color: red;
+  }
+  .copyright{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 67px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  footer{
+    padding-top: 60px;
+  }
+}

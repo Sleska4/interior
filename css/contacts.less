@@ -1,0 +1,182 @@
+header {
+  padding: 63px 167px 57px 98px;
+  background-color: #F5F5F5;
+  .menu ul {
+    display: flex;
+    justify-content: end;
+    float: right;
+    list-style-type: none;
+  }
+
+  .menu a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #212121;
+    font-size: 14px;
+    font-weight: 500;
+    transition: 0.4s;
+  }
+
+  .menu a:hover {
+    color: red;
+    transition: 0.4s;
+    text-decoration: underline;
+  }
+  h1{
+    padding-top: 171px;
+    color: #212121;
+    font-size: 62px;
+    font-weight: 200;
+  }
+}
+
+
+.contacts{
+  padding-top: 69px;
+  padding-bottom: 122px;
+  .border{
+    width: 371px;
+    height: 431px;
+    border: solid 1px black;
+  }
+  img{
+    display: block;
+    width: 38px;
+    height: 48px;
+    margin: 49px auto 36px auto;
+  }
+  .contacts-text{
+    max-width: 271px;
+    margin: 34px auto;
+  }
+  p,
+  b,
+  strong{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+  strong{
+    font-size: 22px;
+    margin-bottom: 23px;
+  }
+  p{
+    font-size: 16px;
+    font-weight: 600;
+  }
+  b{
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: black;
+  }
+}
+.border{
+  background-color: white;
+  transition: 0.5s;
+}
+.border:hover{
+  background-color: rgba(71,71,71,0.4);
+  transition: 0.5s;
+}
+
+// Экстрамалые девайсы («портретные телефоны», < 576px)
+@media (max-width: 575.98px) {
+  .menu{
+    display: none;
+  }
+  header {
+    padding: 63px 10px 57px 10px;
+    height: 100vh;
+    h1{
+      font-size: 32px;
+      padding-top: 25vh;
+    }
+    .logo img{
+      width: 100px;
+    }
+  }
+  .contacts{
+    .border {
+      margin: 30px auto;
+      width: 100%;
+      height: 431px;
+    }
+  }
+  .contacts{
+    .border{
+      height: 331px;
+      border: solid 1px black;
+    }
+    img{
+      display: block;
+      width: 28px;
+      height: 38px;
+      margin: 29px auto 16px auto;
+    }
+    strong{
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+    p{
+      font-size: 14px;
+      font-weight: 600;
+    }
+    b{
+      font-size: 16px;
+      margin-bottom: 10px;
+      color: black;
+    }
+  }
+}
+
+// Малые девайсы («ландшафтные», >= 575px)
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .menu{
+    display: none;
+  }
+  header {
+    padding: 63px 10px 57px 10px;
+  }
+  .contacts{
+    .border {
+      margin: 30px auto;
+      width: 80%;
+      height: 431px;
+    }
+  }
+}
+
+// Средние девайсы («таблетки», >= 768px)
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .container{
+    max-width: 750px;
+  }
+  header {
+    padding: 63px 10px 57px 10px;
+  }
+  .contacts{
+    .border {
+      width: 100%;
+      height: 431px;
+    }
+  }
+}
+
+// Большие девайсы (большие десктопы, >= 992px)
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .container{
+    max-width: 980px;
+  }
+  header {
+    padding: 63px 50px 57px 50px;
+  }
+  .contacts{
+    .border {
+      width: 100%;
+      height: 431px;
+    }
+  }
+}
+
+// Большие девайсы (большие десктопы, >= 1200px)
+@media (min-width: 1200px) {}

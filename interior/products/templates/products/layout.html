@@ -44,14 +44,24 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
+
+
+
+                        {% block img %}
                         <img src="../img/slider1@1X.png" alt="slider" class="product-main-img">
                         <div class="slider-img">
                             <img src="../img/controll@1X.png" alt="slider #1">
                             <img src="../img/controll2@1X.png" alt="slider #2">
                             <img src="../img/controll11@1X.png" alt="slider #3">
                         </div>
+                        {% endblock %}
+
+
                     </div>
                     <div class="col-md-6 product-text">
+
+
+                        {% block text %}
                         <h1>Fishnet Chair</h1>
                         <strong>Hot Deal</strong>
                         <span>$ <b>36.7</b>/sq</span>
@@ -66,6 +76,9 @@
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid cupiditate fugiat iusto?
                                 Aliquam animi at dolore fuga fugit ipsa repellat.</p>
                         </div>
+                        {% endblock %}
+
+
                     </div>
                 </div>
             </div>

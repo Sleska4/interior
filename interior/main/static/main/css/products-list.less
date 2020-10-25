@@ -1,0 +1,95 @@
+header {
+  padding: 63px 97px 57px 98px;
+  background-color: #F5F5F5;
+  .menu ul {
+    display: flex;
+    justify-content: end;
+    float: right;
+    list-style-type: none;
+  }
+
+  .menu a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #212121;
+    font-size: 14px;
+    font-weight: 500;
+    transition: 0.4s;
+  }
+
+  .menu a:hover {
+    color: red;
+    transition: 0.4s;
+    text-decoration: underline;
+  }
+  h1{
+    padding-top: 171px;
+    color: #212121;
+    font-size: 62px;
+    font-weight: 200;
+  }
+}
+section{
+  padding-top: 70px;
+}
+ul {
+  display: flex;
+  justify-content: start;
+}
+
+
+.products{
+  padding-bottom: 120px;
+  li{
+    margin: 0 10px;
+    color: #212121;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  li:hover{
+    cursor: pointer;
+    color: red;
+    transition: 0.3s;
+  }
+  div.img {
+    padding-top: 72px;
+    img {
+      width: 370px;
+      height: 370px;
+      padding-top: 30px;
+    }
+  }
+  .button{
+    margin: 50px auto;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .menu {
+    display: none;
+  }
+
+  header {
+    padding: 63px 10px 57px 10px;
+    height: 100vh;
+
+    h1 {
+      font-size: 32px;
+      padding-top: 25vh;
+    }
+
+    .logo img {
+      width: 100px;
+    }
+  }
+}
+
+// Малые девайсы («ландшафтные», >= 575px)
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .menu{
+    display: none;
+  }
+  header {
+    padding: 63px 10px 57px 10px;
+  }
+}

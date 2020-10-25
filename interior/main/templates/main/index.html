@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -5,9 +6,9 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>INTERIOR</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link type="text/css" rel="stylesheet" href="css/bootstrap-grid.min.css">
-    <link type="text/css" rel="stylesheet" href="css/main.css">
-    <link type="text/css" rel="stylesheet" href="css/firs-page.css">
+    <link type="text/css" rel="stylesheet" href="{% static 'css/bootstrap-grid.min.css' %}">
+    <link type="text/css" rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link type="text/css" rel="stylesheet" href="{% static 'main/css/firs-page.css' %}">
 </head>
 <body>
     <div class="container-fluid">
@@ -19,10 +20,10 @@
                 <div class="menu col-md-9">
                     <ul>
                         <li><a href="#">HOME</a></li>
-                        <li><a href="#">PRODUCTS</a></li>
+                        <li><a href="html/products-list.html">PRODUCTS</a></li>
                         <li><a href="#">HISTORY</a></li>
                         <li><a href="#">SHOWROOM</a></li>
-                        <li><a href="#">CONTACT</a></li>
+                        <li><a href="html/contacts.html">CONTACT</a></li>
                         <li><a href="#"><img src="img/search.svg" alt="search"></a></li>
                     </ul>
                 </div>
@@ -34,7 +35,7 @@
                     or highly polished chrome.</p>
                 <button class="button">ORDER US ></button>
             </div>
-            <div class="circle">
+            <div class="circle" id="circle">
                 <div></div>
                 <div class="active"></div>
                 <div></div>
@@ -193,5 +194,9 @@
             </div>
         </footer>
     </div>
+
+<script src="js/vue.js"></script>
+<script src="js/main+.js"></script>
+
 </body>
 </html>
